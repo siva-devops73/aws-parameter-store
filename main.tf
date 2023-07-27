@@ -31,11 +31,13 @@ variable "params" {
     ## dispatch
     { name = "roboshop.dev.dispatch.amqp_host", value = "rabbitmq-dev.devops73.store", type = "String" },
     { name = "roboshop.dev.dispatch.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
 
 
 
     ### password will be never part of  git repos, usually in organization we create them manually, meaning whom ever have access they will provision secrets in parameter store.
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
   ]
 }
