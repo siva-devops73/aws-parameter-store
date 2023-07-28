@@ -32,6 +32,7 @@ variable "params" {
     { name = "roboshop.dev.dispatch.amqp_host", value = "rabbitmq-dev.devops73.store", type = "String" },
     { name = "roboshop.dev.dispatch.amqp_user", value = "roboshop", type = "String" },
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
 
 
 
@@ -39,5 +40,6 @@ variable "params" {
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
   ]
 }
