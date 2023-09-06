@@ -41,7 +41,7 @@ variable "params" {
 
     { name = "roboshop.dev.user.mongo", value = "true", type = "String" },
     { name = "roboshop.dev.user.redis_host", value = "elasticache-dev.ain9qp.clustercfg.use1.cache.amazonaws.com", type = "String" },
-    { name = "roboshop.dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com:27017/user?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
     { name = "roboshop.dev.user.docdb_endpoint", value = "docdb-dev.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com", type = "String" },
 
 
