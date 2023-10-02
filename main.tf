@@ -35,8 +35,8 @@ variable "params" {
     { name = "roboshop.dev.payment.amqp_user", value = "roboshop", type = "String" },
 
 
-    { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops73.store:8080", type = "String" },
-    { name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devops73.store", type = "String" },
+    { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops73.store:80", type = "String" },
+    { name = "roboshop.dev.shipping.db_host", value = "rds-dev.cluster-cjvkzflxlvkt.us-east-1.rds.amazonaws.com", type = "String" },
 
 
     { name = "roboshop.dev.user.mongo", value = "true", type = "String" },
