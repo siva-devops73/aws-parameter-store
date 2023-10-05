@@ -10,11 +10,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params" {
   default = [
-    { name = "roboshop.dev.frontend.catalogue_url", value = "https://catalogue-dev.devops73.store/", type = "String" },
-    { name = "roboshop.dev.frontend.user_url", value = "https://user-dev.devops73.store/", type = "String" },
-    { name = "roboshop.dev.frontend.cart_url", value = "https://cart-dev.devops73.store/", type = "String" },
-    { name = "roboshop.dev.frontend.shipping_url", value = "https://shipping-dev.devops73.store/", type = "String" },
-    { name = "roboshop.dev.frontend.payment_url", value = "https://payment-dev.devops73.store/", type = "String" },
+    { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devops73.store/", type = "String" },
+    { name = "roboshop.dev.frontend.user_url", value = "http://user-dev.devops73.store/", type = "String" },
+    { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devops73.store/", type = "String" },
+    { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devops73.store/", type = "String" },
+    { name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.devops73.store/", type = "String" },
 
 
     { name = "roboshop.dev.cart.redis_host", value = "elasticache-dev.ain9qp.clustercfg.use1.cache.amazonaws.com", type = "String" },
