@@ -1,10 +1,10 @@
-apply:
+app:
 	@rm -rf .terraform
 	@git pull
 	@terraform init
 	@terraform apply -auto-approve
 
-destroy:
+dest:
 	@rm -rf .terraform
 	@git pull
 	@terraform init
