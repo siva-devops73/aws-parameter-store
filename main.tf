@@ -117,7 +117,7 @@ variable "params" {
     { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
 
     ## Nexus
-    { name = "roboshop.nexus.username", value = "admin", type = "String" },
+    { name = "roboshop.nexus.username", value = "admin", type = "SecureString" },
     { name = "roboshop.nexus.password", value = "admin123", type = "SecureString" }
   ]
 }
