@@ -18,7 +18,7 @@ variable "params" {
     { name = "roboshop.prod.frontend.payment_url", value = "http://payment-prod.devops73.store/", type = "String" },
 
 
-    { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod.ain9qp.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod-instance.ain9qp.0001.use1.cache.amazonaws.com", type = "String" },
     { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.devops73.store", type = "String" },
     { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String" },
 
@@ -41,7 +41,7 @@ variable "params" {
 
 
     { name = "roboshop.prod.user.mongo", value = "true", type = "String" },
-    { name = "roboshop.prod.user.redis_host", value = "elasticache-prod.ain9qp.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.user.redis_host", value = "elasticache-prod-instance.ain9qp.0001.use1.cache.amazonaws.com", type = "String" },
     { name = "roboshop.prod.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-prod.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
     { name = "roboshop.prod.user.docdb_endpoint", value = "docdb-prod.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com", type = "String" },
 
