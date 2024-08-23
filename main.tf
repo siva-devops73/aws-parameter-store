@@ -19,8 +19,11 @@ variable "params" {
 
 
     { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod-instance.ain9qp.0001.use1.cache.amazonaws.com", type = "String" },
-    { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.devop73.store", type = "String" },
-    { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String" },
+  #  { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.devop73.store", type = "String" },
+  #  { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String" },
+    ####### This below is used for kubernetes purpose
+    { name = "roboshop.prod.cart.catalogue_host", value = "catalogue", type = "String" },
+    { name = "roboshop.prod.cart.catalogue_port", value = "8080", type = "String" },
 
 
     { name = "roboshop.prod.catalogue.mongo", value = "true", type = "String" },
@@ -28,10 +31,16 @@ variable "params" {
     { name = "roboshop.prod.catalogue.docdb_endpoint", value = "docdb-prod.cluster-cjvkzflxlvkt.us-east-1.docdb.amazonaws.com", type = "String" },
 
 
-    { name = "roboshop.prod.payment.cart_host", value = "cart-prod.devop73.store", type = "String" },
-    { name = "roboshop.prod.payment.cart_port", value = "80", type = "String" },
-    { name = "roboshop.prod.payment.user_host", value = "user-prod.devop73.store", type = "String" },
-    { name = "roboshop.prod.payment.user_port", value = "80", type = "String" },
+  #  { name = "roboshop.prod.payment.cart_host", value = "cart-prod.devop73.store", type = "String" },
+  #  { name = "roboshop.prod.payment.cart_port", value = "80", type = "String" },
+    ####### This below is used for kubernetes purpose
+    { name = "roboshop.prod.payment.cart_host", value = "cart", type = "String" },
+    { name = "roboshop.prod.payment.cart_port", value = "8080", type = "String" },
+  #  { name = "roboshop.prod.payment.user_host", value = "user-prod.devop73.store", type = "String" },
+  #  { name = "roboshop.prod.payment.user_port", value = "80", type = "String" },
+    ####### This below is used for kubernetes purpose
+    { name = "roboshop.prod.payment.user_host", value = "user", type = "String" },
+    { name = "roboshop.prod.payment.user_port", value = "8080", type = "String" },
     { name = "roboshop.prod.payment.amqp_host", value = "rabbitmq-prod.devop73.store", type = "String" },
     { name = "roboshop.prod.payment.amqp_user", value = "roboshop", type = "String" },
 
