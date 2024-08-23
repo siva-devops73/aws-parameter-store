@@ -45,7 +45,9 @@ variable "params" {
     { name = "roboshop.prod.payment.amqp_user", value = "roboshop", type = "String" },
 
 
-    { name = "roboshop.prod.shipping.cart_endpoint", value = "cart-prod.devop73.store:80", type = "String" },
+  #  { name = "roboshop.prod.shipping.cart_endpoint", value = "cart-prod.devop73.store:80", type = "String" },
+    ####### This below is used for kubernetes purpose
+    { name = "roboshop.prod.shipping.cart_endpoint", value = "cart:8080", type = "String" },
     { name = "roboshop.prod.shipping.db_host", value = "rds-prod.cluster-cjvkzflxlvkt.us-east-1.rds.amazonaws.com", type = "String" },
 
 
